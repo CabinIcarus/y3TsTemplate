@@ -10,5 +10,7 @@
 3. 控制台运行 `yarn install`
 4. 开始写代码
 
+### 目前ts的api存在一些问题,[可以在这里看](https://github.com/yika-aixi/y3-lua-types)
+
 
 ![7XWQ%26HEFB`RUFJ {M`Y)9](https://github.com/CabinIcarus/y3TsTemplate/assets/22412994/d7989bcd-0772-4f70-8df2-b3523d7c7614)
