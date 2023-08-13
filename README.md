@@ -8,7 +8,8 @@
 - - 直接克隆仓库
 2. 修改`ProjectCopnfig.js`中的`Y3ProjectPath`为创建好的项目所在路径
 3. 控制台运行 `yarn install`
-4. 开始写代码
+4. 运行 `yarn run dev`
+5. 开始写代码
 
 ### 目前ts的api存在一些问题,[可以在这里看](https://github.com/yika-aixi/y3-lua-types)
 
