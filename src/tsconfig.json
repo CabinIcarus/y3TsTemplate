@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "lib": ["esnext"],
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "experimentalDecorators": true,
+        "strictNullChecks": false,
+        "strictPropertyInitialization": false,
+        "strict": false,
+        "types": [
+            "@cabin-icarus/y3-lua-types"
+        ]
+    },
+    "tstl": {
+        "luaTarget": "JIT",
+        "sourceMapTraceback": true,
+        "luaPlugins": [
+        ],
+        "noImplicitSelf": true
+    }
+}
