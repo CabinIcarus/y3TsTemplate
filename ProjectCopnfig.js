@@ -2,7 +2,7 @@
 const ProjectName = 'x_template';
 
 /** y3项目的路径 */
-let Y3ProjectPath = "J:/Project/Y3/LuaDemo"
+let Y3ProjectPath = "E:/Game/game/LocalData/DemoLua1"
 
 /** 验证配置是否合法 */
 const assert = require('assert');
@@ -16,9 +16,9 @@ assert(
     ProjectName !== 'y3TsTemplate',
     '请到 ProjectCopnfig.js 修改 ProjectName 为你的项目名称，不能为 y3TsTemplate'
 );
-Y3ProjectPath = path.join(Y3ProjectPath,"script")
+const scriptPath = path.join(Y3ProjectPath,"script")
 assert(
-    fs.existsSync(Y3ProjectPath),
+    fs.existsSync(scriptPath),
     '请到 ProjectCopnfigaddon 修改 Y3ProjectPath 为项目所在路径'
 );
 
