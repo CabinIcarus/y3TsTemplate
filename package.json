@@ -5,12 +5,13 @@
     "author": "Icarus",
     "repository": "https://github.com/CabinIcarus/y3TsTemplate",
     "scripts": {
-        "postinstall": "node scripts/install.js",
+        "postinstall": "ts-node Tools/install.ts",
         "dev": "run-p dev:*",
-        "dev:script": "tstl --project src/tsconfig.json --watch"
+        "dev:script": "tstl --project Scripts/tsconfig.json --watch"
     },
     "devDependencies": {
         "@cabin-icarus/y3-lua-types": "^0.0.8-f",
+        "@types/node": "^20.5.0",
         "@typescript-to-lua/language-extensions": "^1.0.0",
         "file-loader": "^6.2.0",
         "fs-extra": "^9.1.0",

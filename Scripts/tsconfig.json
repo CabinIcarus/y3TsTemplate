@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "outDir": "Lua",
         "target": "esnext",
         "lib": ["esnext"],
         "moduleResolution": "node",
@@ -16,7 +17,6 @@
         "luaTarget": "JIT",
         "sourceMapTraceback": true,
         "luaPlugins": [
-        ],
-        "noImplicitSelf": true
+        ]
     }
 }
