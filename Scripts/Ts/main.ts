@@ -1,5 +1,3 @@
-import IterKey = y3.Const.IterKey;
-
 y3.game.event(y3.Const.GlobalEventType.GAME_INIT, ()=>
 {
     print("Event: ", y3.Const.GlobalEventType.GAME_INIT);
@@ -25,7 +23,7 @@ y3.game.event(y3.Const.GlobalEventType.GAME_INIT, ()=>
         print("data.player: ", data.player);
         print("data.comp_name: ", data.comp_name);
         print("data.ui_event_name: ", data.ui_event_name);
-        //todo 报错
+        //todo 报错,error reading Python attribute/item
         // print("data.pos: ", data.pos);
         print("data.touch_id: ", data.touch_id);
     })
