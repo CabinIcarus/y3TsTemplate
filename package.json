@@ -10,7 +10,7 @@
         "dev:script": "tstl --project Scripts/tsconfig.json --watch"
     },
     "devDependencies": {
-        "@cabin-icarus/y3-lua-types": "^0.0.8-f",
+        "@cabin-icarus/y3-lua-types": "^0.1.2",
         "@types/node": "^20.5.0",
         "@typescript-to-lua/language-extensions": "^1.0.0",
         "file-loader": "^6.2.0",
