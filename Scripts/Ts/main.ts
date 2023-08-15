@@ -1,3 +1,4 @@
+import IterKey = y3.Const.IterKey;
 
 y3.game.event(y3.Const.GlobalEventType.GAME_INIT, ()=>
 {
@@ -12,15 +13,22 @@ y3.game.event(y3.Const.GlobalEventType.GAME_INIT, ()=>
     hero.add_ability(y3.Const.AbilityType.HERO, 134253684,5,1);
 
     const hud = y3.ui.get_ui(player, "GameHUD");
-    const ui = y3.ui.create_ui(player, hud, 5);
-    ui.set_pos(100,100);
-    ui.set_anchor(100,100)
-    ui.set_ui_size(150, 50)
-    ui.set_visible(true);
-    ui.set_text_color(255,255,255,255)
-    ui.set_font_size(18);
+
+    const ui = y3.ui.create_ui(player, hud, y3.Const.UIComponentType.文本);
     ui.set_text(hero.get_name());
     print(ui);
+
+    ui.add_event(y3.Const.UIEventMap["点击-开始"], "onClickTest");
+
+    y3.game.event("界面-消息", "onClickTest", (data)=>
+    {
+        print("data.player: ", data.player);
+        print("data.comp_name: ", data.comp_name);
+        print("data.ui_event_name: ", data.ui_event_name);
+        //todo 报错
+        // print("data.pos: ", data.pos);
+        print("data.touch_id: ", data.touch_id);
+    })
     
     y3.timer.wait(1, arg => {
         print("hello");
